@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">       
 </head>
 <body>
+
+    <div>
+
+    <h1>
+        <span style="color: rgb(57, 57, 57);">Login</span>
+        <span style="color: rgb(93, 93, 93); 
+        font-weight: lighter;
+        width: 5px;
+        ">|</span>
+        <span style="color: green;">Register</span>
+    </h1>
+    </div>
+
+  
+    <p>Enter your email and password to register.</p>
+
+
+    <form class="form">
+    <input type="text" id="username" required placeholder="Username">
+
+    <input type="email" id="email" required placeholder="Enter your email address">
+    
+     <input class="input password" type="password" id="password" required placeholder="Enter Password">
+         
+    <input type="password" id="confirmpassword" required placeholder="Confirm Password">
+  
+   
+    <button class="register-btn" 
+     type="submit" id="submit">Register
+    </button>
+    </form>
+
+    
+    <div class="divider">
+    <span>Or register with</span>
+    </div>
+
+
+<div>
+    
+   <button type="button"
+        class="social-btn"
+        onclick="window.open('https://www.google.com', '_blank')">
+    <img src="./img/google.svg">
+        Continue with Google
+   </button>
+   
+</div>
+
+   
+    <button type="button"
+         class="social-btn"
+         onclick="window.open('https://www.facebook.com/', '_blank')">
+    <img src="./img/facebook.svg">
+    Continue with Facebook
+    </button>
+    <div class="bottom-line"></div>
+    
+   
 </body>
 </html>
+            
