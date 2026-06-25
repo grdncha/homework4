@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+section {
+    margin-top: 12px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    nav,
+    img,
+    button {
+        vertical-align: middle;
+        display: inline-block;
+      
+    }
+
+    .container {
+        display: block;
+        padding-top: 25px;
+        border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+    }
+
+    button {
+        margin-left: 370px;
+    }
+
+    nav {
+        margin-left: 230px;
+        a {
+            &:not(:first-of-type) {
+                margin-left: 50px;
+            }
+            display: inline-block;
+            padding-bottom: 25px;
+            padding-top: 8px;
+            text-decoration: none;
+            font-weight: 400;
+            color: rgba(61, 61, 61, 1);
+        }
+        a:active,
+        a.active {
+            font-weight: 700;
+            border-bottom: 3px solid rgba(70, 163, 88, 1);
+         }
+        }
+}
+
+button {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    border-radius: 6px;
+    background: rgba(70, 163, 88, 1);
+
+    &.small-btn {
+        padding: 8px 17px 7px;
+        font-weight: 500;
+    }
+
+    &.large-btn {
+        padding: 11px 26px 9px;
+        font-weight: 700;
+    }
+}
+
+
+
+main {
+    text-align: center;
+}
+
+section{
+
+    padding-right: 93px;
+    padding-left: 147px;
+}
+.inline-wrapper {
+    display: inline-block;
+    text-align: left; 
+    background: rgba(245, 245, 245, 0.5);
+   
+    
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: middle;
+     font-size: 0;
+   
+   
+}
+.text {
+    
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 123px;
+    
+}
+
+
+
+p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(61, 61, 61, 1);
+}
+.description{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(114, 114, 114, 1);
+    
+}
+
+.img {
+    display: inline-block;
+    vertical-align: middle;
+    
+    
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+    color: rgba(61, 61, 61, 1);
+
+}
+
+span {
+    color: rgba(70, 163, 88, 1);
+}
+
+.large-btn{
+    display: inline-block;
+    margin-bottom: 85px;
+    margin-top: 44px;
+    
+}
