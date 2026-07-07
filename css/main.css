@@ -1,3 +1,40 @@
+@font-face {
+    font-family: "Cera Pro";
+    src: 
+     url("../fonts/CeraPro-Regular.woff") format("woff"),
+     url("../fonts/CeraPro-Regular.eot") format("eot"),
+     url("../fonts/CeraPro-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Medium.woff") format("woff"),
+         url("../fonts/CeraPro-Medium.eot") format("eot"),
+         url("../fonts/CeraPro-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Bold.woff") format("woff"),
+         url("../fonts/CeraPro-Bold.eot") format("eot"),
+         url("../fonts/CeraPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Black.woff") format("woff"),
+         url("../fonts/CeraPro-Black.eot") format("eot"),
+         url("../fonts/CeraPro-Black.ttf") format("truetype");
+    font-weight: 900;
+}
+
+body{
+    font-family: "Cera Pro", sans-serif;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,6 +49,7 @@ section {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    font-size: 0;
 }
 
 header {
@@ -30,7 +68,7 @@ header {
     }
 
     button {
-        margin-left: 370px;
+        margin-left: 350px;
     }
 
     nav {
@@ -76,14 +114,13 @@ button {
 
 
 main {
+    text-align: left;
+}
+#home{
     text-align: center;
 }
 
-section{
 
-    padding-right: 93px;
-    padding-left: 147px;
-}
 .inline-wrapper {
     display: inline-block;
     text-align: left; 
@@ -145,4 +182,183 @@ span {
     margin-bottom: 85px;
     margin-top: 44px;
     
+}
+
+
+#shop{
+    margin-top: 26px;
+
+}
+
+
+.left-side{
+    display:inline-block;
+    width:310px;
+    vertical-align:top;
+    font-size:16px;
+   
+
+}
+.sidebar{
+    display: inline-block;
+    width: 310px;
+    vertical-align: top;
+    background: rgba(251, 251, 251, 1);
+}
+
+.sidebar h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(61, 61, 61, 1);
+    margin-bottom: 17px;
+    margin-top: 14px;
+    margin-left: 18px;
+}
+
+.categories{
+    padding-bottom: 377px;
+}
+
+.categories a{
+    display: block;
+    text-decoration: none;
+    color: rgba(61, 61, 61, 1);
+    font-size: 15px;
+    line-height: 40px;
+    margin-left: 18px;
+    
+}
+
+ 
+
+.categories a.active,
+.categories a:hover{
+    color: rgba(70, 163, 88, 1);
+    font-weight: 700;
+}
+
+.sale-banner{
+    width: 310px;
+   
+    
+}
+
+.sale-banner img{
+    width: 100%;
+    display: block;
+   
+}
+
+
+
+.tabs{
+    display: inline-block;
+}
+
+.tabs a{
+    display: inline-block;
+    margin-right: 35px;
+    text-decoration: none;
+    color: rgba(61, 61, 61, 1);
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.tabs a.active{
+    color: rgba(70, 163, 88, 1);
+    font-weight: 700;
+    border-bottom: 2px solid rgba(70, 163, 88, 1);
+}
+
+.tabs a:hover{
+    color: rgba(70, 163, 88, 1);
+}
+
+.sort{
+    display: inline-block;
+    margin-left: 320px;
+    font-size: 15px;
+    color: rgba(61, 61, 61, 1);
+}
+
+.sort .dropdown{
+    font-size: 15px;
+    color: rgba(61, 61, 61, 1);
+}
+
+
+.products{
+    display: inline-block;
+    width: 840px;
+    vertical-align: top;
+    margin-left: 50px;
+    font-size: 16px;
+}
+
+.products-header{
+    margin-bottom: 35px;
+}
+
+.product-cards{
+    font-size: 0;
+}
+
+.product-card{
+    display: inline-block;
+    width: 258px;
+    margin-right: 25px;
+    margin-bottom: 70px;
+    vertical-align: top;
+    font-size: 16px;
+    
+}
+
+.product-card:nth-child(3n){
+    margin-right: 0;
+}
+
+
+.product-card h4{
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(61, 61, 61, 1);
+}
+
+.product-card span{
+    display: block;
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(70, 163, 88, 1);
+}
+
+
+.pagination{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.pagination a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(61, 61, 61, 1);
+    border: 1px solid rgba(229, 229, 229, 1);
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.pagination a.active{
+    background: rgba(70, 163, 88, 1);
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(70, 163, 88, 1);
+}
+
+.pagination a:hover{
+    background: rgba(70, 163, 88, 1);
+    color: rgba(255, 255, 255, 1);
 }
