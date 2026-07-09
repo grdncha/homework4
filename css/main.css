@@ -347,3 +347,117 @@ span {
     background: rgba(70, 163, 88, 1);
     color: rgba(255, 255, 255, 1);
 }
+
+
+#offers{
+    margin-top:94px;
+    text-align:center;
+}
+
+.offers-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.offer-card{
+    display: flex;
+    width: 586px;
+    background: rgba(251, 251, 251, 1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.offer-card img{
+    width: 280px;
+}
+
+.offer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.offer-content h2{
+    font-size: 18px;
+    font-weight: 900;
+    color: rgba(61, 61, 61, 1);
+    margin-bottom: 10px;
+}
+
+.offer-content p{
+    font-size: 14px;
+    color: rgba(114, 114, 114, 1);
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.offer-content button{
+    padding: 10px 25px;
+}
+
+
+
+#blog{
+    margin-top: 138px;
+}
+
+.blog-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(61, 61, 61, 1);
+}
+
+.blog-subtitle{
+    text-align: center;
+    color: rgba(114, 114, 114, 1);
+    margin-top: 15px;
+}
+
+.blog-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.blog-card{
+    width: 268px;
+    background: rgba(251, 251, 251, 1);
+}
+
+.blog-card img{
+    width: 100%;
+}
+
+.blog-info{
+    padding: 15px;
+}
+
+.blog-info span{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(70, 163, 88, 1);
+}
+
+.blog-info h3{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgba(61, 61, 61, 1);
+}
+
+.blog-info p{
+    color: rgba(114, 114, 114, 1);
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+
+.blog-info a{
+    text-decoration: none;
+    color: rgba(61, 61, 61, 1);
+    font-weight: 500;
+}
