@@ -76,7 +76,8 @@ header {
             color: rgba(61, 61, 61, 1);
             border-bottom: 3px solid transparent;
         }
-        a:hover {
+        a.active,
+        a:hover{
             font-weight: 700;
             border-bottom: 3px solid rgba(70, 163, 88, 1);
          }
@@ -214,6 +215,7 @@ span {
 }
 
  
+.categories a.active,
 .categories a:hover{
     color: rgba(70, 163, 88, 1);
     font-weight: 700;
@@ -241,11 +243,13 @@ span {
     text-decoration: none;
     color: rgba(61, 61, 61, 1);
     font-size: 15px;
+    padding-bottom: 7px;
     border-bottom: 2px solid transparent;
 
 }
 
 
+.tabs a.active,
 .tabs a:hover{
     color: rgba(70, 163, 88, 1);
     font-weight: 700;
@@ -416,6 +420,7 @@ span {
 }
 
 
+.pagination a.active,
 .pagination a:hover{
     background: rgba(70, 163, 88, 1);
     color: rgba(255, 255, 255, 1);
