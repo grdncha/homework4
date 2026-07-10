@@ -66,23 +66,94 @@ header {
 
     nav {
         
-        display: flex;
-        gap: 50px;
-        a {
+        ul{
+            list-style: none;
+        }
+        .list{
+            display: flex;
+            gap: 50px;
+
+        }
+
+        > ul > li {
+            position: relative;
             padding-bottom: 25px;
             padding-top: 8px;
+            border-bottom: 3px solid transparent;
+
+            }
+
+        
+        a{
+            display: flex;
+            justify-content: space-between;
             text-decoration: none;
             font-weight: 400;
             color: rgba(61, 61, 61, 1);
-            border-bottom: 3px solid transparent;
+            
         }
-        a.active,
-        a:hover{
-            font-weight: 700;
+
+
+        
+        > ul > li:hover{
             border-bottom: 3px solid rgba(70, 163, 88, 1);
-         }
         }
+
+
+        > ul > li.active > a,
+        > ul > li:hover > a{
+            font-weight: 700;
+        
+         }
+
+
+
+        .sublist{
+            position: absolute;
+            padding-top: 12px;
+            display: none;
+            width: 188px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            span{
+                align-items: end;
+            }
+            li{
+                width: 100%;
+                padding: 7px 14px 8px;
+                background-color: rgba(237, 246, 238, 1);
+
+                &:hover{
+                    background-color: rgba(26, 113, 42, 1);
+                    > a{
+                        font-weight: 700;
+                        color: white;
+                    }
+                    > a > span{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        ul > li:hover > .sublist,
+        ul > li:hover > .sublist > li:hover .sublist {
+            display: block;
+        }
+
+        .sublist.second{
+            top:0%;
+            left: 100%;
+            transform: none;
+            padding-left: 2px;
+        }
+        .sublist li:hover img {
+        filter: brightness(0) invert(1);
+        
+         }
+    }
 }
+
 
 button {
     color: rgba(255, 255, 255, 1);
