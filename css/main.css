@@ -85,14 +85,15 @@ header {
         
         a{
             display: flex;
-            justify-content: space-between;
             text-decoration: none;
             font-weight: 400;
             color: rgba(61, 61, 61, 1);
-            
+            min-width: max-content;
         }
       
-
+        .list > li:nth-child(3) {
+            width: 76px;
+        }
         
         > ul > li:hover{
             border-bottom: 3px solid rgba(70, 163, 88, 1);
@@ -107,7 +108,7 @@ header {
 
 
 
-        .sublist{
+        .sublist {
             position: absolute;
             padding-top: 12px;
             display: none;
@@ -115,26 +116,44 @@ header {
             top: 100%;
             left: 50%;
             transform: translateX(-50%);
-            span{
-                align-items: end;
-            }
-            li{
-                width: 100%;
-                padding: 7px 14px 8px;
-                background-color: rgba(237, 246, 238, 1);
 
-                &:hover{
-                    background-color: rgba(26, 113, 42, 1);
-                    > a{
-                        font-weight: 700;
-                        color: white;
-                    }
-                    > a > span{
-                        transform: rotate(180deg);
-                    }
+            span {
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+
+                svg {
+                    width: 7px;
+                    height: 10px;
+                    color: rgba(61, 61, 61, 1);
+                    transition: transform .3s;
                 }
             }
+             li > a {
+                    display: flex;
+                    align-items: center;
+                    color: rgba(61, 61, 61, 1);
+               }
+    li {
+        width: 100%;
+        padding: 7px 14px 8px;
+        background-color: rgba(237, 246, 238, 1);
+
+        &:hover {
+            background-color: rgba(26, 113, 42, 1);
+
+            > a {
+                font-weight: 700;
+                color: white;
+            }
+
+            > a > span svg {
+                color: rgba(255, 255, 255, 1);
+                transform: rotate(180deg);
+            }
         }
+    }
+}
         ul > li:hover > .sublist,
         ul > li:hover > .sublist > li:hover .sublist {
             display: block;
@@ -153,6 +172,12 @@ header {
     }
 }
 
+.footer-logo-icon {
+    width: 150px;
+    height: 35px;
+    margin-bottom: 18px;
+    display: block;
+} 
 
 button {
     color: rgba(255, 255, 255, 1);
@@ -164,20 +189,21 @@ button {
 
 
     &.small-btn {
-        padding: 8px 17px 7px;
+        padding: 8px 41px 7px;
         font-weight: 500;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 370px;
         line-height: 1;
-        margin-bottom: 18px;
         width: 100px;
     
-    img{
-    display: block;
-    margin-right: 4px;
-    }
+     .logout-icon {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        margin-right: 4px;
+}
+    
 }
 
     &.large-btn {
@@ -185,14 +211,49 @@ button {
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
+       
     }
 }
+
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 261px;
+    margin-bottom: 18px;
+}
+
+.header-icon-search {
+    width: 20px;
+    height: 20px;
+    margin-right: 35px;
+    flex-shrink: 0;
+}
+
+.cart {
+    margin-right: 30px;
+}
+
+.header-icon-cart {
+    width: 24px; 
+    height: 24px;
+    flex-shrink: 0;
+    overflow: visible;
+    display: block;
+}
+
 
 
 
 main {
     text-align: left;
 }
+
+
+
+
+
+
 #home{
     text-align: left;
     color: rgba(61, 61, 61, 1);
@@ -210,7 +271,7 @@ main {
 }
 
 .text {
-    margin-top: 68px;
+    margin-top: 58px;
     margin-left: 43px;
     
     
@@ -225,6 +286,7 @@ main {
 p{
     font-size: 14px;
     font-weight: 500;
+    line-height: 16px;
     color: rgba(61, 61, 61, 1);
 }
 .description{
@@ -249,7 +311,7 @@ h1 {
     color: rgba(61, 61, 61, 1);
     line-height: 70px;
     width: 530px;
-    margin-top: 7px;
+    margin-top: 10px;
 
 }
 
@@ -269,7 +331,7 @@ span {
 
 
 #shop .container{
-    margin-top: 46px;
+    margin-top: 40px;
     display: flex;
     align-items: flex-start;
     gap: 50px;
@@ -279,43 +341,60 @@ span {
 
 .left-side{
     width:310px;
-    height: 774px;
     font-size:16px;
 
 }
 .sidebar{
     width: 310px;
     background: rgba(251, 251, 251, 1);
-    
+    height: 774px;
 }
 
 .sidebar h2{
     font-size: 18px;
     font-weight: 700;
+    line-height: 16px;
     color: rgba(61, 61, 61, 1);
-    margin-top: 14px;
-    margin-left: 18px;
-    
+    padding: 14px 18px 7px;
 }
 
 .categories{
-    padding-bottom: 377px;
     display: flex;
     flex-direction: column;
- 
-   
+    margin-bottom: 36px;
 }
 
 .categories a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-decoration: none;
-    color: rgba(61, 61, 61, 1);
     font-size: 15px;
+    font-weight: 400;
     line-height: 40px;
-    margin-left: 30px;
-    
-    
+    color: rgba(61,61,61,1);
+    transition: .3s;
+    padding-left: 30px;
+    padding-right: 24px;
+
+}
+.categories a span:first-child,
+.categories a span:last-child{
+    color:rgba(61,61,61,1);
+    font-size:15px;
+    font-weight:400;
+
 }
 
+.categories a.active span{
+    color:rgba(70,163,88,1);
+    font-weight:700;
+}
+
+.categories a:hover span{
+    color:rgba(70,163,88,1);
+    font-weight: 700;
+}
  
 .categories a.active,
 .categories a:hover{
@@ -323,10 +402,133 @@ span {
     font-weight: 700;
 }
 
+.price-range{
+    margin-top: 36px;
+    margin-bottom: 42px;
+}
+
+.slider{
+    width: 209px;
+    height: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(70,163,88,0.2);
+    border-radius: 4px;
+    margin: 0 0 0 30px;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: rgba(70,163,88,1);
+    border: 3px solid rgba(255,255,255,1);
+    cursor: pointer;
+   
+}
+
+
+
+.price-range h2{
+    padding: 0 18px 12px;
+}
+
+
+.price-range p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(61,61,61,1);
+    padding: 21px 30px 16px;
+}
+
+.price-range p span{
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 700;
+    color: rgba(70,163,88,1);
+    
+}
+
+.filter-btn{
+    width: 90px;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(70,163,88,1);
+    color: rgba(255,255,255,1);
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 30px;
+    padding: 8px 26px 7px;
+}
+
+.filter-btn:hover{
+    background: rgba(58,145,75,1);
+}
+
+
+
+.sizes{
+    display: flex;
+    flex-direction: column;
+     margin-bottom: 19px;
+}
+
+.sizes h2{
+     padding: 0 18px 7px;
+}
+
+.sizes a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(61, 61, 61, 1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    padding-left: 30px;
+    padding-right: 24px;
+   
+}
+.sizes a span{
+    color:rgba(61,61,61,1);
+    font-weight: 400;
+    
+}
+.sizes a span:first-child,
+.sizes a span:last-child{
+    color: rgba(61,61,61,1);
+    font-size: 15px;
+    font-weight: 400;
+}
+.sizes a:hover span{
+    color:rgba(70,163,88,1);
+    font-weight: 700;
+}
+
+.sizes a:hover{
+    color: rgba(70,163,88,1);
+    font-weight: 700;
+}
+
+.categories a span:last-child{
+    position: relative;
+    left: 2px;
+}
+
+.sizes a span:last-child{
+    position: relative;
+    left: 4px;
+}
+
+
 .sale-banner{
     width: 310px;
-   
-    
+
 }
 
 .sale-banner img{
@@ -334,6 +536,8 @@ span {
     margin-left: -29px;
     mix-blend-mode:multiply;
 }
+
+
 
 .products-header{
     display: flex;
@@ -387,6 +591,12 @@ span {
     font-size: 15px;
     color: rgba(61, 61, 61, 1);
 }
+.sort svg{
+    width: 10px;
+    height: 5px;
+    display: block;
+    overflow: visible;
+}
 
 
 .product-cards{
@@ -407,6 +617,9 @@ span {
     height: 300px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     background: rgba(251, 251, 251, 1);
     transition: box-shadow .3s;
 }
@@ -420,13 +633,18 @@ span {
     padding: 20px;
     mix-blend-mode: multiply;
 }
+.product-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
 
 .product-card:hover .product-image{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .product-card h3{
-    margin-top: 6px;
+    margin-top: 12px;
     margin-bottom: 6px;
     font-size: 16px;
     line-height: 16px;
@@ -445,19 +663,17 @@ span {
     display: flex;
     align-items: center;
     gap: 15px;
-
-}
-
-.current-price{
     font-size: 18px;
     line-height: 16px;
     font-weight: 700;
     color: rgba(70, 163, 88, 1);
 }
 
+
 .old-price{
     font-size: 18px;
-    line-height: 16px;
+    line-height: 18px;
+    font-weight: 400;
     text-decoration: line-through;
     color: rgba(165, 165, 165, 1);
 }

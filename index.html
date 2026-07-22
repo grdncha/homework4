@@ -10,7 +10,9 @@
 
 <header>
 <div class="container"> 
-    <img src="./img/Logo.svg" alt="logo" width="150" height="35" style="margin-bottom: 18px;">
+  <svg class="footer-logo-icon" aria-label="Logo">
+    <use href="./sprite.svg#logo"></use>
+</svg>
     <nav>
         <ul class="list">
             
@@ -24,8 +26,10 @@
                     <li><a href="">Fertilizer</a></li>
                     
                     <li><a href="">Priming 
-                    <span> 
-                        <img src="./img/Stroke3.svg" alt="">
+                   <span>
+                        <svg>
+                            <use href="./sprite.svg#stroke3"></use>
+                        </svg>
                     </span>
                         </a>
                           <ul class="sublist second">
@@ -42,14 +46,31 @@
             <li><a>Blogs</a></li>
         </ul>
     </nav>
+    <div class="header-icons">
+
+            <svg class="header-icon-search" aria-label="Search">
+                <use href="./sprite.svg#search"></use>
+            </svg>
+
+            <div class="cart">
+                <svg class="header-icon-cart" aria-label="Cart">
+                    <use href="./sprite.svg#cart"></use>
+                </svg>
+            </div>
 
 
-    <button class="small-btn">
-        <img src="./img/Logout.svg" alt="login">Login
+    <button class="small-btn" onclick="window.location.href='./form.html'" >
+        <svg class="logout-icon" aria-hidden="true">
+        <use href="./sprite.svg#logout"></use>
+    </svg>Login
     </button>
+</div>
 </div>
 </header>
 <main>
+
+
+
     <section id="home">
         <div class="inline-wrapper">
 
@@ -84,18 +105,86 @@
             <aside class="sidebar">
                 <h2>Categories</h2>
 
-                <div class="categories">
-                    <a href="#" class="active">House Plants</a>
-                    <a href="#">Potter Plants</a>
-                    <a href="#">Seeds</a>
-                    <a href="#">Small Plants</a>
-                    <a href="#">Big Plants</a>
-                    <a href="#">Succulents</a>
-                    <a href="#">Terrariums</a>
-                    <a href="#">Gardening</a>
-                    <a href="#">Accessories</a>
+                   <div class="categories">
+                        <a href="#" class="active">
+                            <span>House Plants</span>
+                            <span>(33)</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Potter Plants</span>
+                            <span>(12)</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Seeds</span>
+                            <span>(65)</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Small Plants</span>
+                            <span>(39)</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Big Plants</span>
+                            <span>(23)</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Succulents</span>
+                            <span>(17)</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Terrariums</span>
+                            <span>(19)</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Gardening</span>
+                            <span>(13)</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Accessories</span>
+                            <span>(18)</span>
+                        </a>
+                   </div>
+
+                <div class="price-range">
+                    <h2>Price Range</h2>
+
+                    <input type="range" min="39" max="1230" value="650" class="slider">
+
+                    <p>Price: <span>$39 - $1230</span></p>
+
+                    <button class="filter-btn">Filter</button>
                 </div>
-            </aside>
+
+          
+
+
+                    <div class="sizes">
+                        <h2>Size</h2>
+
+                        <a href="#">
+                            <span>Small</span>
+                            <span>(119)</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Medium</span>
+                            <span>(86)</span>
+                        </a>
+
+                        <a href="#">
+                            <span>Large</span>
+                            <span>(78)</span>
+                        </a>
+                    </div>
+            
+        </aside>
 
             <aside class="sale-banner">
                 <img src="./img/sale.banner.png" alt="Sale">
@@ -116,7 +205,9 @@
                 <div class="sort">
                     Sort by:
                     <span class="dropdown">Default sorting</span>
-                    <img src="./img/Stroke1.svg" alt="arrow">
+                        <svg>
+                            <use href="./sprite.svg#stroke1"></use>
+                        </svg>
                 </div>
 
             </div>
@@ -129,9 +220,23 @@
                         <img src="./img/image1.png" alt="Barberton Daisy">
 
                         <div class="product-icons">
-                            <a href="#"><img src="./img/cart.svg" alt=""></a>
-                            <a href="#"><img src="./img/heart.svg" alt=""></a>
-                            <a href="#"><img src="./img/search.svg" alt=""></a>
+                            <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#cart2"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#heart"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#search"></use>
+        </svg>
+    </a>
                         </div>
                     </div>
 
@@ -145,9 +250,23 @@
                         <img src="./img/img2.png" alt="Angel Wing Begonia">
 
                         <div class="product-icons">
-                            <a href="#"><img src="./img/cart.svg" alt=""></a>
-                            <a href="#"><img src="./img/heart.svg" alt=""></a>
-                            <a href="#"><img src="./img/search.svg" alt=""></a>
+                            <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#cart2"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#heart"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#search"></use>
+        </svg>
+    </a>
                         </div>
                     </div>
 
@@ -164,15 +283,29 @@
                       <img src="./img/image3.png" alt="African Violet">
 
                         <div class="product-icons">
-                            <a href="#"><img src="./img/cart.svg" alt=""></a>
-                            <a href="#"><img src="./img/heart.svg" alt=""></a>
-                            <a href="#"><img src="./img/search.svg" alt=""></a>
+                            <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#cart2"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#heart"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#search"></use>
+        </svg>
+    </a>
                         </div>
                     </div>
 
                     <h3>African Violet</h3>
                     <div class="price">
-                    <span class="current-price">$199.00</span>
+                    <span>$199.00</span>
                     <span class="old-price">$222.00</span>
                 </div>
             </div>
@@ -183,9 +316,23 @@
                         <img src="./img/img4.png" alt="Beach Spider Lily">
 
                         <div class="product-icons">
-                            <a href="#"><img src="./img/cart.svg" alt=""></a>
-                            <a href="#"><img src="./img/heart.svg" alt=""></a>
-                            <a href="#"><img src="./img/search.svg" alt=""></a>
+                            <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#cart2"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#heart"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#search"></use>
+        </svg>
+    </a>
                         </div>
                     </div>
 
@@ -199,9 +346,23 @@
                         <img src="./img/image5.png" alt="Blushing Bromeliad">
 
                         <div class="product-icons">
-                            <a href="#"><img src="./img/cart.svg" alt=""></a>
-                            <a href="#"><img src="./img/heart.svg" alt=""></a>
-                            <a href="#"><img src="./img/search.svg" alt=""></a>
+                           <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#cart2"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#heart"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#search"></use>
+        </svg>
+    </a>
                         </div>
                     </div>
 
@@ -215,9 +376,23 @@
                         <img src="./img/image6.png" alt="Aluminum Plant">
 
                         <div class="product-icons">
-                            <a href="#"><img src="./img/cart.svg" alt=""></a>
-                            <a href="#"><img src="./img/heart.svg" alt=""></a>
-                            <a href="#"><img src="./img/search.svg" alt=""></a>
+                          <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#cart2"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#heart"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#search"></use>
+        </svg>
+    </a>
                         </div>
                     </div>
 
@@ -231,9 +406,23 @@
                         <img src="./img/image7.png" alt="Bird's Nest Fern">
 
                         <div class="product-icons">
-                            <a href="#"><img src="./img/cart.svg" alt=""></a>
-                            <a href="#"><img src="./img/heart.svg" alt=""></a>
-                            <a href="#"><img src="./img/search.svg" alt=""></a>
+                           <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#cart2"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#heart"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#search"></use>
+        </svg>
+    </a>
                         </div>
                     </div>
 
@@ -247,9 +436,23 @@
                         <img src="./img/img8.png" alt="Broadleaf Lady Palm">
 
                         <div class="product-icons">
-                            <a href="#"><img src="./img/cart.svg" alt=""></a>
-                            <a href="#"><img src="./img/heart.svg" alt=""></a>
-                            <a href="#"><img src="./img/search.svg" alt=""></a>
+                            <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#cart2"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#heart"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#search"></use>
+        </svg>
+    </a>
                         </div>
                     </div>
 
@@ -263,9 +466,23 @@
                         <img src="./img/image9.png" alt="Chinese Evergreen">
 
                         <div class="product-icons">
-                            <a href="#"><img src="./img/cart.svg" alt=""></a>
-                            <a href="#"><img src="./img/heart.svg" alt=""></a>
-                            <a href="#"><img src="./img/search.svg" alt=""></a>
+                           <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#cart2"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#heart"></use>
+        </svg>
+    </a>
+
+    <a href="#">
+        <svg class="product-icon">
+            <use href="./sprite.svg#search"></use>
+        </svg>
+    </a>
                         </div>
                     </div>
 
