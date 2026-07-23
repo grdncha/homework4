@@ -1069,17 +1069,16 @@ span {
 
 
 .logo-item{
-    width: 150px;
-    margin-left: 23px;
-
-}
-
-
-.footer-logo-icon{
-    
-    height: 35px;
     display: block;
+    width: 150px;
+    height: 34px;
+    margin-left: 23px;
+    margin-top: 27px;
+    margin-bottom: 27px;
 }
+
+
+
 
 
 .location-item{
@@ -1116,10 +1115,10 @@ span {
     margin-right: 9px;
 }
 
-.location-item p,
-.mail-item p,
-.call-item p{
-    
+.location-item a,
+.mail-item a,
+.call-item a{
+    text-decoration: none;
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
