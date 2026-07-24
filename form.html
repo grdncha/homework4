@@ -9,65 +9,81 @@
         
 </head>
 <body>
-
-    <div>
-
-    <h1>
-        <span style="color: rgb(57, 57, 57);">Login</span>
-        <span style="color: rgb(93, 93, 93); 
-        font-weight: lighter;
-        width: 5px;
-        ">|</span>
-        <span style="color: green;">Register</span>
-    </h1>
+   <div class="loader-wrapper">
+    <div class="loader">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
     </div>
-
-  
-    <p>Enter your email and password to register.</p>
-
-
-    <form class="form">
-    <input type="text" id="username" required placeholder="Username">
-
-    <input type="email" id="email" required placeholder="Enter your email address">
-    
-     <input class="input password" type="password" id="password" required placeholder="Enter Password">
-         
-    <input type="password" id="confirmpassword" required placeholder="Confirm Password">
-  
-   
-    <button class="register-btn" 
-     type="submit" id="submit">Register
-    </button>
-    </form>
-
-    
-    <div class="divider">
-    <span>Or register with</span>
-    </div>
-
-
-<div>
-    
-   <button type="button"
-        class="social-btn"
-        onclick="window.open('https://www.google.com', '_blank')">
-    <img src="./img/google.svg">
-        Continue with Google
-   </button>
-   
 </div>
 
-   
+<div id="content" style="display: none;">
+
+    <h1>
+        <span style="color: rgba(61, 61, 61, 1);">Login</span>
+        <span style="color: rgba(61, 61, 61, 1); font-weight: lighter;">|</span>
+        <span style="color: rgba(70, 163, 88, 1);">Register</span>
+    </h1>
+
+    <p>Enter your email and password to register.</p>
+
+    <form class="form">
+        <input type="text" id="username" required placeholder="Username">
+
+        <input type="email" id="email" required placeholder="Enter your email address">
+
+        <input class="input password" type="password" id="password" required placeholder="Enter Password">
+
+        <input type="password" id="confirmpassword" required placeholder="Confirm Password">
+
+
+<div class="checkbox-wrapper-29">
+  <label class="checkbox">
+    <input type="checkbox" class="checkbox__input" />  
+    <span class="checkbox__label"></span>
+    <span class="checkbox-text">
+      I agree to the Terms & Conditions
+    </span>
+  </label>
+</div>
+
+
+
+        <button class="register-btn" type="submit" id="submit">
+            Register
+        </button>
+    </form>
+
+    <div class="divider">
+        <span>Or register with</span>
+    </div>
+
     <button type="button"
-         class="social-btn"
-         onclick="window.open('https://www.facebook.com/', '_blank')">
-   <img src="./img/facebook.svg">
-    Continue with Facebook
+        class="social-btn"
+        onclick="window.open('https://www.google.com', '_blank')">
+        <img src="./img/google.svg" alt="google">
+        Continue with Google
     </button>
+
+    <button type="button"
+        class="social-btn"
+        onclick="window.open('https://www.facebook.com/', '_blank')">
+        <img src="./img/facebook.svg" alt="facebook">
+        Continue with Facebook
+    </button>
+
     <div class="bottom-line"></div>
-    
-   
+
+</div>
+
+<script>
+setTimeout(function () {
+    document.querySelector(".loader-wrapper").style.display = "none";
+    document.getElementById("content").style.display = "block";
+}, 2000);
+</script>
+
 </body>
 </html>
             
