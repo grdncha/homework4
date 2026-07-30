@@ -250,10 +250,6 @@ main {
 }
 
 
-
-
-
-
 #home{
     text-align: left;
     color: rgba(61, 61, 61, 1);
@@ -1291,4 +1287,890 @@ span {
     font-weight: 400;
     line-height: 30px;
     color: rgba(61,61,61,1);
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+    .container {
+        max-width: 1200px;
+        
+    }
+   
+header {
+    nav {
+      marg
+
+      .list {
+        gap: 20px;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+
+  .footer-logo-icon {
+    margin-left: 10px;
+  }
+
+  header {
+    nav {
+      margin-left: 120px;
+
+      .list {
+        gap: 20px;
+      }
+    }
+  }
+
+  .header-icons {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  #home {
+    .inline-wrapper {
+      max-width: 1024px;
+    }
+
+    .image {
+      position: relative;
+      overflow: hidden;
+       
+    }
+  }
+
+  #shop {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  .left-side {
+    display: none;
+  }
+
+  .products {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .products-header {
+    width: 100%;
+  }
+
+  .product-cards {
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .pagination {
+    justify-content: center;
+  }
+
+  #offers {
+    p {
+      max-width: 50%;
+    }
+  }
+
+  .footer-contact {
+    justify-content: space-between;
+    gap: 30px;
+  }
+ 
+
+.footer-column-1,
+.footer-column-2,
+.footer-column-3 {
+   width: 140px;
+    margin-right: 60px;
+}
+
+}
+ 
+ 
+
+
+
+@media screen and (max-width: 992px){
+.container {
+        max-width: 992px;
+        
+    }
+header {
+    nav {
+      margin-left: 70px;
+
+      .list {
+        gap: 20px;
+      }
+    }
+  }
+
+#home {
+   .inline-wrapper {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    .text {
+      margin: 40px 20px 20px;
+    }
+
+    h1,
+    .description {
+      width: 100%;
+      max-width: 992px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .large-btn {
+      margin: 30px auto;
+    }
+
+    .image {
+      margin: 0;
+    }
+  }
+#offers {
+        margin-top: 80px;
+    }
+
+    .offers-container {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .offer-card-1,
+    .offer-card-2 {
+        padding-right: 15px;
+    }
+
+    .offer-content {
+        width: 90%;
+    }
+
+
+    .offer-content h2 {
+        width: auto;
+        white-space: nowrap;
+    }
+
+
+.blog-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+ .footer .container {
+        width: 100%;
+    }
+
+      .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
+
+    .service {
+        flex: 1;
+        width: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service:nth-child(1)::after,
+    .service:nth-child(2)::after {
+        right: -15px;
+        height: 170px;
+    }
+    .newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+    .newsletter p {
+    display: none;
+    }
+
+  .footer-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .logo-item {
+        display: none;
+    }
+}
+
+.location-item,
+.mail-item,
+.call-item {
+    width: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 20px;
+}
+        
+ 
+
+.footer-bottom {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .social-column {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+
+    .footer-column-1,
+    .footer-column-2,
+    .footer-column-3,
+    .social-column {
+        width: auto;
+        height: auto;
+        margin-right: 0;
+        flex: 1;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .container {
+        max-width: 768px;
+        
+    }
+header {
+    nav {
+      margin-left: 70px;
+
+      .list {
+        gap: 20px;
+      }
+    }
+  }
+
+#home {
+   .inline-wrapper {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    .text {
+      margin: 40px 20px 20px;
+    }
+
+    h1,
+    .description {
+      width: 100%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .large-btn {
+      margin: 30px auto;
+    }
+
+    .image {
+      margin: 0;
+    }
+  }
+#offers {
+        margin-top: 80px;
+    }
+
+    .offers-container {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .offer-card-1,
+    .offer-card-2 {
+        padding-right: 15px;
+    }
+
+    .offer-content {
+        width: 90%;
+    }
+
+
+    .offer-content h2 {
+        width: auto;
+        white-space: nowrap;
+    }
+
+
+.blog-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+ .footer .container {
+        width: 100%;
+    }
+
+      .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
+
+    .service {
+        flex: 1;
+        width: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service:nth-child(1)::after,
+    .service:nth-child(2)::after {
+        right: -15px;
+        height: 170px;
+    }
+    .newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+    .newsletter p {
+    display: none;
+    }
+
+  .footer-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .logo-item {
+        display: none;
+    }
+}
+
+.location-item,
+.mail-item,
+.call-item {
+    width: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 20px;
+}
+        
+ 
+
+.footer-bottom {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .social-column {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+
+    .footer-column-1,
+    .footer-column-2,
+    .footer-column-3,
+    .social-column {
+        width: auto;
+        height: auto;
+        margin-right: 0;
+        flex: 1;
+    }
+
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+    .container {
+        max-width: 576px;
+        
+    }
+
+header {
+        width: 100%;
+        justify-content: space-between;
+
+        
+
+    nav {
+        margin-left: 0;
+
+        .list {
+            display: none;
+        }
+    }
+
+}
+
+.footer-logo-icon{
+    overflow: visible;
+}
+
+
+.header-icon-search{
+    transform: translateX(25px);
+}
+.header-icon-cart{
+    transform: translateX(10px);
+ }
+
+#home {
+   .inline-wrapper {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    .text {
+      margin: 40px 20px 20px;
+    }
+
+    h1,
+    .description {
+      width: 100%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .large-btn {
+      margin: 30px auto;
+    }
+
+   .image {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 400px;
+    height: auto;
+}
+  }
+ .product-cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .product-card {
+        width: 258px;
+    }
+
+    .small-btn{
+        margin-right: 10px;
+    }
+
+
+
+#offers {
+        margin-top: 80px;
+    }
+
+    .offers-container {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .offer-card-1,
+    .offer-card-2 {
+        width: 100%;
+    }
+
+    .offer-content {
+        width: 90%;
+    }
+
+
+    .offer-content h2 {
+        width: auto;
+        white-space: nowrap;
+    }
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-contact {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    width: 100% ;
+}
+
+.logo-item {
+    margin: 0;
+}
+
+.footer-logo-icon {
+    width: 150px;
+    height: 35px;
+}
+
+.location-item,
+.mail-item,
+.call-item {
+    width: auto;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-item a,
+.mail-item a,
+.call-item a {
+    text-align: left;
+}
+
+.call-item {
+    justify-content: center;
+}
+
+.footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 35px;
+}
+
+.footer-column-1,
+.footer-column-2,
+.footer-column-3 {
+    width: auto;
+    height: auto;
+    margin-right: 0;
+    text-align: center;
+}
+
+.footer-column-1 ul,
+.footer-column-2 ul,
+.footer-column-3 ul {
+    text-align: center;
+}
+
+.social-column {
+    width: 100%;
+    text-align: center;
+}
+
+.socials {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payments img {
+    margin: 0 auto;
+}
+
+
+}
+
+
+
+
+@media (max-width: 320px) {
+   .container {
+        width: 100%;
+        max-width: 320px;
+    }
+ header{ .container {
+       width: 100%;
+        padding: 15px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .footer-logo-icon {
+        width: 120px;
+        height: 28px;
+        margin: 0;
+    }
+
+
+    .header-icons {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        transform: translate(15px, 2px);
+
+    }
+
+
+    .header-icon-search {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        transform: none;
+    }
+
+
+    .cart {
+        margin: 0;
+    }
+
+
+    .header-icon-cart {
+        width: 22px;
+        height: 22px;
+        transform: none;
+    }
+
+
+    .small-btn {
+        width: 85px;
+        height: 32px;
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+ }
+ 
+
+    #home {
+
+        .text {
+            margin: 30px 10px 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            line-height: 45px;
+            width: 100%;
+        }
+
+        .description {
+            width: 100%;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .image img {
+            width: 280px;
+            height: auto;
+        }
+
+        .large-btn {
+            margin: 25px auto;
+        }
+    }
+
+
+    #shop .container {
+    width: 100%;
+    padding: 0 10px;
+    flex-direction: column;
+    gap: 30px;
+}
+ .products-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .tabs {
+        display: flex;
+        gap: 37px;
+    }
+
+
+    .sort {
+       align-items: center;
+    }
+
+#blog {
+    margin-top: 80px;
+}
+
+.blog-title {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.blog-subtitle {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+  
+
+
+    .product-card {
+        width: 100%;
+        max-width: 258px;
+    }
+
+
+    .product-image {
+        width: 100%;
+    }
+
+
+
+    .offer-card-1,
+    .offer-card-2 {
+        width: 100%;
+        height: 220px;
+        padding-right: 15px;
+    }
+
+    .offer-card-1 img,
+    .offer-card-2 img {
+        width: 180px;
+        height: 180px;
+        left: -20px;
+    }
+
+    .offer-content {
+        width: 100%;
+    }
+
+    .offer-content h2 {
+        font-size: 16px;
+    }
+
+    .offer-content p {
+        width: 160px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+  
+
+
+
+    .newsletter {
+        width: 100%;
+    }
+
+    .newsletter h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+    }
+
+    .newsletter-form input {
+        width: calc(100% - 70px);
+    }
+
+    .newsletter-form button {
+        width: 70px;
+    }
+
+
+
+    .footer-contact {
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .footer-logo-icon {
+        width: 130px;
+        height: auto;
+    }
+
+
+    .location-item a,
+    .mail-item a,
+    .call-item a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .contact-icon {
+        width: 16px;
+        height: 16px;
+        overflow: visible;
+    }
+
+
+
+    .footer-bottom {
+        padding: 25px 10px;
+        gap: 25px;
+    }
+
+
+    .social-column h4,
+    .footer-column-1 h4,
+    .footer-column-2 h4,
+    .footer-column-3 h4 {
+        font-size: 16px;
+    }
+
+
+    .payments img {
+        width: 200px;
+    }
+
 }
